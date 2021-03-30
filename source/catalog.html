@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <header class="header-main">
+      <div class="header-wrapper">
+        <nav>
+          <ul class="header-main__list">
+            <li class="header-main__item">
+              <a class="header-main__link" href="index.html">Главная</a>
+            </li>
+            <li class="header-main__item">
+              <a class="header-main__link" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="header-main__item">
+              <a class="header-main__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="header-main__item">
+              <a class="header-main__link" href="#">html academy</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-main__button-burger">
+          <div class="header-main__wrapper-button-burger">
+            <a href="#">
+              <img src="http://dummyimage.com/50x50" alt="logo-header">
+            </a>
+            <button type="button" name="button" title="открытие меню"></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="photo-gallery">
+        <h1 class="visually-hidden">фотогалерея</h1>
+        <div class="photo-gallery__wrapper">
+          <div class="photo-gallery__top">
+            <img src="http://dummyimage.com/230x40" alt="welcome to the gorgeus sedona">
+          </div>
+          <div class="photo-gallery__bottom">
+            <h2 class="photo-gallery__title">фото и видео</h2>
+            <p class="photo-gallery__excerpt">не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-of-reviews">
+        <h2 class="visually-hidden">галерея обзоров</h2>
+        <div class="gallery-of-reviews__wrapper">
+          <div class="gallery-of-reviews__box">
+            <picture>
+              <source media="(min-width:1280px)" srcset="#">
+              <source media="(min-width:768px)" srcset="#">
+              <img src="http://dummyimage.com/280x280" alt="">
+            </picture>
+            <div class="gallery-of-reviews__description">
+              <h3 class="gallery-of-reviews__title">неродные просторы</h3>
+              <p class="gallery-of-reviews__excerpt">Автор фото: Борис</p>
+              <div class="gallery-of-reviews__likes">
+                <button type="button" name="button"></button>
+                <span>1350</span>
+              </div>
+            </div>
+          </div>
+          <ul class="gallery-of-reviews__list">
+            <li class="gallery-of-reviews__item">
+              <picture>
+                <source media="(min-width:1280px)" srcset="#">
+                <source media="(min-width:768px)" srcset="#">
+                <img src="http://dummyimage.com/280x280" alt="">
+              </picture>
+              <div class="gallery-of-reviews__description">
+                <h3 class="gallery-of-reviews__title">Местная растительность</h3>
+                <p class="gallery-of-reviews__excerpt">Автор фото: Сергей</p>
+                <div class="gallery-of-reviews__likes">
+                  <button type="button" name="button"></button>
+                  <span>143</span>
+                </div>
+              </div>
+            </li>
+            <li class="gallery-of-reviews__item">
+              <picture>
+                <source media="(min-width:1280px)" srcset="#">
+                <source media="(min-width:768px)" srcset="#">
+                <img src="http://dummyimage.com/280x280" alt="">
+              </picture>
+              <div class="gallery-of-reviews__description">
+                <h3 class="gallery-of-reviews__title">Дорога на север</h3>
+                <p class="gallery-of-reviews__excerpt">Автор фото: Петр</p>
+                <div class="gallery-of-reviews__likes">
+                  <button type="button" name="button"></button>
+                  <span>96</span>
+                </div>
+              </div>
+            </li>
+            <li class="gallery-of-reviews__item">
+              <picture>
+                <source media="(min-width:1280px)" srcset="#">
+                <source media="(min-width:768px)" srcset="#">
+                <img src="http://dummyimage.com/280x280" alt="">
+              </picture>
+              <div class="gallery-of-reviews__description">
+                <h3 class="gallery-of-reviews__title">Мост дьявола</h3>
+                <p class="gallery-of-reviews__excerpt">Автор фото: Антон</p>
+                <div class="gallery-of-reviews__likes">
+                  <button type="button" name="button"></button>
+                  <span>254</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="video-presentation">
+        <h2 class="visually-hidden">видеопрезентация</h2>
+        <div class="video-presentation__wrapper">
+          <div class="video-presentation__top">
+            <h3 class="video-presentation__title">Все еще сомневаетесь?</h3>
+            <p class="video-presentation__excerpt">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
+          <div class="video-presentation__bottom">
+            <img src="http://dummyimage.com/320x200" alt="">
+            <div class="video-presentation__control">
+              <div class="video-presentation__skale">
+                <div class="video-presentation__bar"></div>
+              </div>
+              <div class="video-presentation__toggle video-presentation__toggle-min"></div>
+              <div class="video-presentation__toggle video-presentation__toggle-max"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer-main">
+      <div class="footer-main__wrapper">
+        <div class="footer-main__top">
+          <a class="footer-main__link-top" href="#">#visitsedona</a>
+        </div>
+        <ul class="footer-main__list">
+          <li class="footer-main__item">
+            <a class="footer-main__link" href="#">Twit</a>
+          </li>
+          <li class="footer-main__item">
+            <a class="footer-main__link" href="#">Fs</a>
+          </li>
+          <li class="footer-main__item">
+            <a class="footer-main__link" href="#">YouTube</a>
+          </li>
+        </ul>
+        <div class="footer-main__bottom">
+          <a class="footer-main__link-bottom" href="#">Разработано</a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
