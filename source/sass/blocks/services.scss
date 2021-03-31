@@ -37,7 +37,7 @@
 }
 
 .services__item-before-1 {
-  &:before {
+  &::before {
     display: block;
     content: "";
     position: relative;
@@ -51,7 +51,7 @@
 }
 
 .services__item-before-2 {
-  &:before {
+  &::before {
     display: block;
     content: "";
     position: relative;
@@ -65,7 +65,7 @@
 }
 
 .services__item-before-3 {
-  &:before {
+  &::before {
     display: block;
     content: "";
     position: relative;
