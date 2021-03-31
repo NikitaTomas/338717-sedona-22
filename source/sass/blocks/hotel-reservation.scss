@@ -1,0 +1,44 @@
+.hotel-reservation {
+  background-color: #ffffff;
+}
+
+.hotel-reservation__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 33px;
+  padding-bottom: 27px;
+  text-align: center;
+}
+
+.hotel-reservation__title {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 260px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.hotel-reservation__excerpt {
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #4f4f4f;
+  text-transform: uppercase;
+}
+
+.hotel-reservation__link {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #81B3D2;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  padding: 10px 50px;
+}

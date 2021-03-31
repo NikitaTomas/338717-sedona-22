@@ -1,0 +1,46 @@
+.welcome {
+  width: 100%;
+  outline: 1px solid red;
+}
+
+.welcome__wrapper {
+}
+
+.welcome__top {
+  width: 100%;
+  min-height: 389px;
+  background-image: url("../img/sedona-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
+.welcome__position-img {
+  margin-top: 95px;
+}
+
+.welcome__bottom {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  outline: 1px solid green;
+  text-align: center;
+}
+
+.welcome__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.welcome__excerpt {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #4f4f4f;
+}

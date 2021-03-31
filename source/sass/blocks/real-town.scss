@@ -1,0 +1,39 @@
+.list-of-reasons {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.real-town {
+  background-color: #81B3D2;
+  text-align: center;
+}
+
+
+
+.real-town__box {
+  width: 295px;
+  margin: auto;
+  padding-top: 33px;
+  padding-bottom: 40px;
+}
+
+.real-town__title {
+  margin: 0;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.real-town__excerpt {
+  margin: 0;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.real-town__img {
+  width: 100%;
+}
