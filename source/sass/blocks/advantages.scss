@@ -2,10 +2,13 @@
   background-color: #eeeeee;
 }
 
-.advantages__list {
-  padding: 0;
+.advantages__wrapper {
   width: 320px;
   margin: 0 auto;
+}
+
+.advantages__list {
+  padding: 0;
   list-style: none;
   display: flex;
   flex-direction: column;

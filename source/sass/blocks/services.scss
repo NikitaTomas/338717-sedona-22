@@ -1,21 +1,20 @@
-.services {
-  outline: 1px solid red;
-}
-
-.services__list {
-  width: 320px;
+.services__wrapper {
+  width: 290px;
   padding: 0;
-  padding-left: 70px;
+  padding-left: 30px;
   padding-bottom: 35px;
   padding-top: 35px;
   margin: 0 auto;
+}
+
+.services__list {
   list-style: none;
   display: flex;
   flex-direction: column;
 }
 
 .services__item {
-  width: 210px;
+  width: 230px;
   margin-bottom: 10px;
 }
 
@@ -36,7 +35,7 @@
   text-transform: uppercase;
 }
 
-.services__item-before-1 {
+.services__house-img {
   &::before {
     display: block;
     content: "";
@@ -50,7 +49,7 @@
   }
 }
 
-.services__item-before-2 {
+.services__gift-img {
   &::before {
     display: block;
     content: "";
@@ -64,7 +63,7 @@
   }
 }
 
-.services__item-before-3 {
+.services__food-img {
   &::before {
     display: block;
     content: "";

@@ -39,16 +39,12 @@
   background-color: #81b3d2;
 }
 
-.footer-main__link-1 {
-  line-height: 50px;
-}
-
-.footer-main__link-2 {
-  line-height: 55px;
-}
-
-.footer-main__link-3 {
-  line-height: 50px;
+.footer-main__link {
+  width: 46px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-main__bottom {
