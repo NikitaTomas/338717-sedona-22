@@ -15,21 +15,6 @@
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
-.header-main__button-exit {
-  &::before {
-    display: block;
-    content: "";
-    position: absolute;
-    right: 0;
-    margin-right: 20px;
-    margin-top: 15px;
-    width: 23px;
-    height: 23px;
-    background-image: url("../img/icon-cross.svg");
-    background-repeat: no-repeat;
-  }
-}
-
 .header-main__link {
   text-decoration: none;
   color: #ffffff;
@@ -42,9 +27,21 @@
   text-align: center;
 }
 
-.header-main__logo--position {
+.header-main__logo {
   position: relative;
   left: 25px;
+}
+
+.header-main__item--position {
+  padding-left: 50px;
+}
+
+.header-main__button-nav {
+  border: none;
+  background-color: transparent;
+  float: right;
+  margin-right: 10px;
+  margin-top: 15px;
 }
 
 .header-main__button {
