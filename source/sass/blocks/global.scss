@@ -1,0 +1,28 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media (min-width: 960px) {
+    padding: 0 10px;
+    width: 960px;
+  }
+}
