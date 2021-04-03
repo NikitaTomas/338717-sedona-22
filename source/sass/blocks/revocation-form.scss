@@ -1,0 +1,208 @@
+
+.revocation-form__wrapper {
+  margin: 0 auto;
+}
+
+.revocation-form__list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.revocation-form__item {
+  width: 320px;
+  padding: 0;
+  border: none;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    border-top: 1px solid #e5e5e5;
+  }
+}
+
+.revocation-form__title {
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.revocation-form__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.revocation-form__wrapper-item {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+}
+
+.revocation-form__box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.revocation-form__box-input {
+  padding-left: 20px;
+  width: 100%;
+  height: 58px;
+  margin-left: 5px;
+  border: none;
+  background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+  }
+}
+
+.revocation-form__phone-input {
+  padding-left: 20px;
+  width: 92%;
+  height: 58px;
+  margin-left: 5px;
+  border: none;
+  background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+  }
+}
+
+.revocation-form__radio-button + label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.revocation-form__radio-button + label::before {
+  display: inline-block;
+  content: "";
+  width: 53px;
+  height: 53px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.revocation-form__radio-button:hover + label::before {
+  background-color: #e5e5e5;
+}
+
+.revocation-form__radio-button:disabled + label::before {
+  background-color: #d5d5d5;
+}
+
+.revocation-form__radio-button:checked + label::before {
+  background-image: url("../img/input-radio-form.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.revocation-form__impression-label {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.revocation-form__visited-input + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.revocation-form__visited-input + label::before {
+  display: inline-block;
+  content: "";
+  width: 51px;
+  height: 51px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 10%;
+  background-color: #f2f2f2;
+}
+
+.revocation-form__visited-input:hover + label::before {
+  background-color: #e5e5e5;
+}
+
+.revocation-form__visited-input:disabled + label::before {
+  background-color: #d5d5d5;
+}
+
+.revocation-form__visited-input:checked + label::before {
+  background-image: url("../img/tick-form.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.revocation-form__visited-label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.revocation-form__title-textarea {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.revocation-form__post-a-review {
+  display: flex;
+  margin: auto;
+}
+
+.revocation-form__excerpt-form {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
+}
+
+.revocation-form__review-button {
+  margin: auto;
+  border: none;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  padding: 15px 40px;
+}
