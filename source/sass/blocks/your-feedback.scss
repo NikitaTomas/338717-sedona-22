@@ -1,0 +1,42 @@
+.your-feedback {
+  width: 100%;
+}
+
+.your-feedback__top {
+  width: 100%;
+  min-height: 158px;
+  background-image: url("../img/sedona-background-form.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
+.your-feedback__position-img {
+  margin-top: 50px;
+}
+
+.your-feedback__bottom {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.your-feedback__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.your-feedback__excerpt {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #4f4f4f;
+}
