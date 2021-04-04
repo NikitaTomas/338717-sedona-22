@@ -1,8 +1,8 @@
-.your-feedback {
+.photo-gallery {
   width: 100%;
 }
 
-.your-feedback__top {
+.photo-gallery__top {
   width: 100%;
   min-height: 158px;
   background-image: url("../img/sedona-background-form.jpg");
@@ -11,19 +11,19 @@
   text-align: center;
 }
 
-.your-feedback__position-img {
+.photo-gallery__position-img {
   margin-top: 50px;
 }
 
-.your-feedback__bottom {
-  width: 320px;
+.photo-gallery__bottom {
+  width: 310px;
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
 }
 
-.your-feedback__title {
+.photo-gallery__title {
   margin: 0;
   margin-bottom: 30px;
   font-weight: 700;
@@ -33,7 +33,7 @@
   color: #000000;
 }
 
-.your-feedback__excerpt {
+.photo-gallery__excerpt {
   margin: 0;
   font-weight: 700;
   font-size: 18px;
