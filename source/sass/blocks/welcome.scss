@@ -9,6 +9,16 @@
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
+
+  @media (min-width: 768px) {
+    min-height: 518px;
+    background-image: url("../img/sedona-background-tablet.jpg");
+  }
+
+  @media (min-width: 1200px) {
+    min-height: 518px;
+    background-image: url("../img/sedona-background-desktop.jpg");
+  }
 }
 
 .welcome__position-img {
@@ -21,6 +31,10 @@
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
+
+  @media (min-width: 768px) {
+    width: 550px;
+  }
 }
 
 .welcome__title {
@@ -38,4 +52,9 @@
   font-size: 18px;
   line-height: 26px;
   color: #4f4f4f;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
 }

@@ -29,6 +29,8 @@
         <div class="header-main__button-burger">
           <a class="header-main__link-button-burger" href="#">
             <picture class="header-main__logo">
+              <source media="(min-width:1200px)" srcset="img/logotype-desktop.png 1x, img/logotype-desktop@2x.png 2x">
+              <source media="(min-width:768px)" srcset="img/logotype-tablet.png 1x, img/logotype-tablet@2x.png 2x">
               <img src="img/logotype-mobile.png" alt="logo-header" srcset="img/logotype-mobile@2x.png 2x">
             </picture>
           </a>
@@ -48,7 +50,10 @@
         <h1 class="visually-hidden">добро пожаловать в ущелье седону</h1>
         <div class="welcome__wrapper">
           <div class="welcome__top">
-            <img  class="welcome__position-img" src="img/welcom-sedona.svg" alt="welcome to the gorgeus sedona">
+            <picture>
+              <source media="(min-width:768px)" srcset="img/welcom-sedona-tablet.svg">
+              <img  class="welcome__position-img" src="img/welcom-sedona.svg" alt="welcome to the gorgeus sedona">
+            </picture>
           </div>
           <div class="welcome__bottom">
             <h2 class="welcome__title">Седона — небольшой городок в аризоне, заслуживающий большего!</h2>
@@ -68,9 +73,9 @@
                 <p class="real-town__excerpt">седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <picture>
-                <source media="(min-width:1200px)" srcset="#">
-                <source media="(min-width:768px)" srcset="#">
-                <img class="real-town__img" src="img/real-town-img.jpg" alt="городок" srcset="img/real-town-img@2x 2x">
+                <source media="(min-width:1200px)" srcset="img/real-town-img-desktop.jpg 1x, img/real-town-img-desktop@2x.jpg 2x">
+                <source media="(min-width:768px)" srcset="img/real-town-img-tablet.jpg 1x, img/real-town-img-tablet@2x.jpg 2x">
+                <img class="real-town__img" src="img/real-town-img.jpg" alt="городок" srcset="img/real-town-img@2x.jpg 2x">
               </picture>
             </div>
 
@@ -103,8 +108,8 @@
                 <p class="devils-bridge__excerpt">да, по нему можно пройти! если вы осмелитесь, конечно</p>
               </div>
               <picture>
-                <source media="(min-width:1200px)" srcset="#">
-                <source media="(min-width:768px)" srcset="#">
+                <source media="(min-width:1200px)" srcset="img/devils-bridge-img-desktop.jpg 1x, img/devils-bridge-img-desktop@2x.jpg 2x">
+                <source media="(min-width:768px)" srcset="img/devils-bridge-img-tablet.jpg 1x, img/devils-bridge-img-tablet@2x.jpg 2x">
                 <img class="devils-bridge__img" src="img/devils-bridge-img.jpg" alt="мост дьявола" srcset="img/devils-bridge-img@2x.jpg 2x">
               </picture>
             </div>

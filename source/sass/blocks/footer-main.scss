@@ -8,9 +8,23 @@
   padding-bottom: 23px;
   margin: auto;
   text-align: center;
+
+  @media (min-width: 768px) {
+    width: 768px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .footer-main__top {
+  width: 170px;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
