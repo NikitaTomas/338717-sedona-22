@@ -1,4 +1,12 @@
 
+.header-wrapper {
+  padding-bottom: 56px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 0;
+  }
+}
+
 .header-main__list {
   padding: 0;
   margin: 0 auto;
@@ -9,7 +17,6 @@
 
   @media (min-width: 768px) {
     flex-direction: row;
-    position: absolute;
   }
 }
 
@@ -70,28 +77,14 @@
   }
 }
 
-.header-main__button-burger {
-  width: 100%;
-  height: 56px;
-  background-color: #ffffff;
-  text-align: center;
-}
-
 .header-main__logo {
-  position: relative;
-  left: 25px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 
   @media (min-width: 768px) {
-    left: 0;
+    top: 0;
   }
-}
-
-.header-main__button-nav {
-  border: none;
-  background-color: transparent;
-  float: right;
-  margin-right: 10px;
-  margin-top: 15px;
 }
 
 .header-main__button {
