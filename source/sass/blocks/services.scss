@@ -5,17 +5,32 @@
   padding-bottom: 35px;
   padding-top: 35px;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 100%;
+    padding-left: 0;
+  }
 }
 
 .services__list {
   list-style: none;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+  }
 }
 
 .services__item {
   width: 230px;
   margin-bottom: 10px;
+
+  @media (min-width: 768px) {
+    text-align: center;
+  }
 }
 
 .services__title {
@@ -33,6 +48,12 @@
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+    width: 170px;
+    margin: 0 auto;
+  }
 }
 
 .services__house-img {
@@ -46,6 +67,15 @@
     top: 30px;
     background-image: url("../img/services__item-house.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: 768px) {
+      width: 75px;
+      height: 72px;
+      background-image: url("../img/services__item-house-tablet.svg");
+      right: 0;
+      top: -25px;
+      margin: auto;
+    }
   }
 }
 
@@ -60,6 +90,15 @@
     top: 30px;
     background-image: url("../img/services__item-gift.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: 768px) {
+      width: 64px;
+      height: 75px;
+      background-image: url("../img/services__item-gift-tablet.svg");
+      right: 0;
+      top: -25px;
+      margin: auto;
+    }
   }
 }
 
@@ -74,5 +113,14 @@
     top: 30px;
     background-image: url("../img/services__item-burger.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: 768px) {
+      width: 76px;
+      height: 70px;
+      background-image: url("../img/services__item-burger-tablet.svg");
+      right: 0;
+      top: -25px;
+      margin: auto;
+    }
   }
 }

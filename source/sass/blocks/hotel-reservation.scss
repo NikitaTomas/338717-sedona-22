@@ -8,6 +8,10 @@
   padding-top: 33px;
   padding-bottom: 27px;
   text-align: center;
+
+  @media (min-width: 768px) {
+    width: 600px;
+  }
 }
 
 .hotel-reservation__title {
@@ -15,10 +19,15 @@
   margin-bottom: 20px;
   width: 260px;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 26px;
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+    width: 360px;
+  }
 }
 
 .hotel-reservation__excerpt {
@@ -30,6 +39,10 @@
   line-height: 26px;
   color: #4f4f4f;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    width: 515px;
+  }
 }
 
 .hotel-reservation__link {
@@ -41,4 +54,8 @@
   font-size: 21px;
   line-height: 26px;
   padding: 10px 50px;
+
+  @media (min-width: 768px) {
+    padding: 10px 120px;
+  }
 }

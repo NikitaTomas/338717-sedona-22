@@ -1,6 +1,11 @@
 .devils-bridge {
   background-color: #81b3d2;
   text-align: center;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 .devils-bridge__box {
@@ -16,6 +21,11 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+
+  @media (min-width: 768px) {
+    width: 125px;
+    margin: 0 auto;
+  }
 }
 
 .devils-bridge__excerpt {
@@ -24,8 +34,16 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
+
+  @media (min-width: 768px) {
+    width: 205px;
+    margin: 0 auto;
+  }
 }
 
 .devils-bridge__img {
   width: 100%;
+  display: block;
+  height: 260px;
+  object-fit: cover;
 }
