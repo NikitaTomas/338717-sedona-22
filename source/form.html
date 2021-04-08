@@ -8,12 +8,14 @@
   </head>
   <body class="page-body">
 
+  <div class="container-body">
+
     <header class="header-main">
       <div class="header-wrapper">
         <nav>
           <ul class="header-main__list">
             <li class="header-main__item">
-              <a class="header-main__link" href="index.html">Главная</a>
+              <a class="header-main__link" href="#">Главная</a>
             </li>
             <li class="header-main__item">
               <a class="header-main__link" href="catalog.html">Фото и видео</a>
@@ -25,10 +27,10 @@
               <a class="header-main__link" href="#">html academy</a>
             </li>
           </ul>
-        </nav>
-        <div class="header-main__button-burger">
           <a class="header-main__link-button-burger" href="#">
             <picture class="header-main__logo">
+              <source media="(min-width:1200px)" srcset="img/logotype-desktop.png 1x, img/logotype-desktop@2x.png 2x">
+              <source media="(min-width:768px)" srcset="img/logotype-tablet.png 1x, img/logotype-tablet@2x.png 2x">
               <img src="img/logotype-mobile.png" alt="logo-header" srcset="img/logotype-mobile@2x.png 2x">
             </picture>
           </a>
@@ -39,7 +41,7 @@
               <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
             </svg>
           </button>
-        </div>
+        </nav>
       </div>
     </header>
 
@@ -49,7 +51,10 @@
         <h1 class="visually-hidden">Ваши отзывы</h1>
         <div class="your-feedback__wrapper">
           <div class="your-feedback__top">
-            <img class="your-feedback__position-img" src="img/sedona-form.svg" alt="welcome to the gorgeus sedona">
+            <picture>
+              <source media="(min-width:768px)" srcset="img/sedona-form-tablet.svg">
+              <img class="your-feedback__position-img" src="img/sedona-form.svg" alt="welcome to the gorgeus sedona">
+            </picture>
           </div>
           <div class="your-feedback__bottom">
             <h2 class="your-feedback__title">Оставьте свой отзыв</h2>
@@ -79,9 +84,9 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="revocation-form__item">
+            <fieldset class="revocation-form__item revocation-form__item--position-contact-information">
               <legend class="revocation-form__title">Контактная информация:</legend>
-              <div class="revocation-form__wrapper-item">
+              <div class="revocation-form__wrapper-item revocation-form__wrapper-item--position-flex">
                 <div class="revocation-form__box-phone">
                   <label class="revocation-form__label" for="phone">Контактный телефон*:</label>
                   <input class="revocation-form__phone-input" type="number" name="phone" id="phone" placeholder="Введите телефон" required>
@@ -92,7 +97,7 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="revocation-form__item">
+            <fieldset class="revocation-form__item revocation-form__item--position-your-impression">
               <legend class="revocation-form__title">Ваше Общее впечатление:</legend>
               <div class="revocation-form__wrapper-item">
                 <div class="revocation-form__your-impression">
@@ -109,9 +114,9 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="revocation-form__item">
+            <fieldset class="revocation-form__item revocation-form__item--position-visited-attractions">
               <legend class="revocation-form__title">посещенные <br>достопримечательности:</legend>
-              <div class="revocation-form__wrapper-item">
+              <div class="revocation-form__wrapper-item  revocation-form__item--flex--visited-attractions">
                 <div class="revocation-form__sights-visited">
                   <input class="visually-hidden revocation-form__visited-input" type="checkbox" name="devil's-bridge" id="devil's-bridge" value="" checked>
                   <label class="revocation-form__visited-label" for="devil's-bridge">Мост Дьявола</label>
@@ -130,7 +135,7 @@
                 </div>
               </div>
             </fieldset>
-            <div class="revocation-form__item">
+            <div class="revocation-form__item revocation-form__item-emotion">
               <div class="revocation-form__wrapper-item">
                 <div class="revocation-form__emotion">
                   <label class="revocation-form__title" for="emotion">Опишите свои эмоции:</label>
@@ -186,6 +191,8 @@
         </div>
       </div>
     </footer>
+
+  </div>
 
   </body>
 </html>

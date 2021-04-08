@@ -9,10 +9,24 @@
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
+
+  @media (min-width: 768px) {
+    min-height: 290px;
+    background-image: url("../img/sedona-background-form-tablet.jpg");
+  }
+
+  @media (min-width: 1200px) {
+    min-height: 301px;
+    background-image: url("../img/sedona-background-form-desktop.jpg");
+  }
 }
 
 .your-feedback__position-img {
   margin-top: 50px;
+
+  @media (min-width: 768px) {
+    margin-top: 100px;
+  }
 }
 
 .your-feedback__bottom {
@@ -21,6 +35,11 @@
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
+
+  @media (min-width: 768px) {
+    width: 570px;
+    outline: 1px solid black;
+  }
 }
 
 .your-feedback__title {
@@ -31,6 +50,10 @@
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 .your-feedback__excerpt {
