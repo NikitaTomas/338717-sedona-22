@@ -30,16 +30,10 @@
 }
 
 .your-feedback__bottom {
-  width: 320px;
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-
-  @media (min-width: 768px) {
-    width: 570px;
-    outline: 1px solid black;
-  }
 }
 
 .your-feedback__title {
