@@ -8,12 +8,14 @@
   </head>
   <body class="page-body">
 
+    <div class="container-body">
+
     <header class="header-main">
       <div class="header-wrapper">
         <nav>
           <ul class="header-main__list">
             <li class="header-main__item">
-              <a class="header-main__link" href="index.html">Главная</a>
+              <a class="header-main__link" href="#">Главная</a>
             </li>
             <li class="header-main__item">
               <a class="header-main__link" href="catalog.html">Фото и видео</a>
@@ -25,10 +27,10 @@
               <a class="header-main__link" href="#">html academy</a>
             </li>
           </ul>
-        </nav>
-        <div class="header-main__button-burger">
           <a class="header-main__link-button-burger" href="#">
             <picture class="header-main__logo">
+              <source media="(min-width:1200px)" srcset="img/logotype-desktop.png 1x, img/logotype-desktop@2x.png 2x">
+              <source media="(min-width:768px)" srcset="img/logotype-tablet.png 1x, img/logotype-tablet@2x.png 2x">
               <img src="img/logotype-mobile.png" alt="logo-header" srcset="img/logotype-mobile@2x.png 2x">
             </picture>
           </a>
@@ -39,7 +41,7 @@
               <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
             </svg>
           </button>
-        </div>
+        </nav>
       </div>
     </header>
 
@@ -49,7 +51,10 @@
         <h1 class="visually-hidden">фотогалерея</h1>
         <div class="photo-gallery__wrapper">
           <div class="photo-gallery__top">
-            <img class="photo-gallery__position-img" src="img/sedona-form.svg" alt="welcome to the gorgeus sedona">
+            <picture>
+              <source media="(min-width:768px)" srcset="img/sedona-form-tablet.svg">
+              <img class="photo-gallery__position-img" src="img/sedona-form.svg" alt="welcome to the gorgeus sedona">
+            </picture>
           </div>
           <div class="photo-gallery__bottom">
             <h2 class="photo-gallery__title">фото и видео</h2>
@@ -58,89 +63,97 @@
         </div>
       </section>
 
-      <section class="gallery-of-reviews container">
+      <section class="gallery-of-reviews ">
         <h2 class="visually-hidden">галерея обзоров</h2>
         <div class="gallery-of-reviews__wrapper">
           <div class="gallery-of-reviews__box">
             <picture>
-              <source media="(min-width:1280px)" srcset="#">
-              <source media="(min-width:768px)" srcset="#">
-              <img src="img/non-native-spaces.jpg" alt="" srcset="img/non-native-spaces@2x.jpg 2x">
-            </picture>
-            <div class="gallery-of-reviews__description">
-              <h3 class="gallery-of-reviews__title">неродные просторы</h3>
-              <p class="gallery-of-reviews__excerpt">Автор фото: Борис</p>
-              <div class="gallery-of-reviews__likes">
-                <button class="gallery-of-reviews__button-likes" type="button" name="button">
-                  <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
-                  </svg>
-                </button>
-                <span class="gallery-of-reviews__counter">1350</span>
-              </div>
-            </div>
-          </div>
-          <ul class="gallery-of-reviews__list">
-            <li class="gallery-of-reviews__item">
-              <picture>
-                <source media="(min-width:1280px)" srcset="#">
-                <source media="(min-width:768px)" srcset="#">
-                <img src="img/local-vegetation.jpg" alt="" srcset="img/local-vegetation@2x.jpg 2x">
-              </picture>
-              <div class="gallery-of-reviews__description">
-                <h3 class="gallery-of-reviews__title">Местная растительность</h3>
-                <p class="gallery-of-reviews__excerpt">Автор фото: Сергей</p>
-                <div class="gallery-of-reviews__likes">
-                  <button class="gallery-of-reviews__button-likes" type="button" name="button">
-                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
-                    </svg>
-                  </button>
-                  <span class="gallery-of-reviews__counter">143</span>
+              <source media="(min-width:1200px)" srcset="img/non-native-spaces-desktop.jpg 1x, img/non-native-spaces-desktop@2x.jpg 2x">
+                <source media="(min-width:768px)" srcset="img/non-native-spaces-tablet.jpg 1x, img/non-native-spaces-tablet@2x.jpg 2x">
+                  <img class="gallery-of-reviews__box-img" src="img/non-native-spaces.jpg" alt="" srcset="img/non-native-spaces@2x.jpg 2x">
+                </picture>
+                <div class="gallery-of-reviews__description-box">
+                  <div class="gallery-of-reviews__wrapper-title">
+                    <h3 class="gallery-of-reviews__title">неродные просторы</h3>
+                    <p class="gallery-of-reviews__excerpt">Автор фото: Борис</p>
+                  </div>
+                  <div class="gallery-of-reviews__likes">
+                    <button class="gallery-of-reviews__button-likes" type="button" name="button">
+                      <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                      </svg>
+                    </button>
+                    <span class="gallery-of-reviews__counter">1350</span>
+                </div>
                 </div>
               </div>
-            </li>
-            <li class="gallery-of-reviews__item">
-              <picture>
-                <source media="(min-width:1280px)" srcset="#">
-                <source media="(min-width:768px)" srcset="#">
-                <img src="img/road-north.jpg" alt="" srcset="img/road-north@2x.jpg 2x">
-              </picture>
-              <div class="gallery-of-reviews__description">
-                <h3 class="gallery-of-reviews__title">Дорога на север</h3>
-                <p class="gallery-of-reviews__excerpt">Автор фото: Петр</p>
-                <div class="gallery-of-reviews__likes">
-                  <button class="gallery-of-reviews__button-likes" type="button" name="button">
-                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
-                    </svg>
-                  </button>
-                  <span class="gallery-of-reviews__counter">96</span>
-                </div>
-              </div>
-            </li>
-            <li class="gallery-of-reviews__item">
-              <picture>
-                <source media="(min-width:1280px)" srcset="#">
-                <source media="(min-width:768px)" srcset="#">
-                <img src="img/devils-bridge.jpg" alt="" srcset="img/devils-bridge@2x.jpg 2x">
-              </picture>
-              <div class="gallery-of-reviews__description">
-                <h3 class="gallery-of-reviews__title">Мост дьявола</h3>
-                <p class="gallery-of-reviews__excerpt">Автор фото: Антон</p>
-                <div class="gallery-of-reviews__likes">
-                  <button class="gallery-of-reviews__button-likes" type="button" name="button">
-                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
-                    </svg>
-                  </button>
-                  <span class="gallery-of-reviews__counter">254</span>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+              <ul class="gallery-of-reviews__list">
+                <li class="gallery-of-reviews__item">
+                  <picture>
+                    <source media="(min-width:1200px)" srcset="img/local-vegetation-desktop.jpg 1x, img/local-vegetation-desktop@2x.jpg 2x">
+                      <source media="(min-width:768px)" srcset="img/local-vegetation-tablet.jpg 1x, img/local-vegetation-tablet@2x.jpg 2x">
+                        <img src="img/local-vegetation.jpg" alt="" srcset="img/local-vegetation@2x.jpg 2x">
+                      </picture>
+                      <div class="gallery-of-reviews__description-box">
+                        <div class="gallery-of-reviews__wrapper-title">
+                          <h3 class="gallery-of-reviews__title">Местная растительность</h3>
+                          <p class="gallery-of-reviews__excerpt">Автор фото: Сергей</p>
+                        </div>
+                        <div class="gallery-of-reviews__likes">
+                          <button class="gallery-of-reviews__button-likes" type="button" name="button">
+                            <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                            </svg>
+                          </button>
+                          <span class="gallery-of-reviews__counter">143</span>
+                      </div>
+                      </div>
+                    </li>
+                    <li class="gallery-of-reviews__item">
+                      <picture>
+                        <source media="(min-width:1200px)" srcset="img/road-north-desktop.jpg 1x, img/road-north-desktop@2x.jpg 2x">
+                          <source media="(min-width:768px)" srcset="img/road-north-tablet.jpg 1x, img/road-north-tablet@2x.jpg 2x">
+                            <img src="img/road-north.jpg" alt="" srcset="img/road-north@2x.jpg 2x">
+                          </picture>
+                          <div class="gallery-of-reviews__description-box">
+                            <div class="gallery-of-reviews__wrapper-title">
+                              <h3 class="gallery-of-reviews__title">Дорога на север</h3>
+                              <p class="gallery-of-reviews__excerpt">Автор фото: Петр</p>
+                            </div>
+                            <div class="gallery-of-reviews__likes">
+                              <button class="gallery-of-reviews__button-likes" type="button" name="button">
+                                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                                </svg>
+                              </button>
+                              <span class="gallery-of-reviews__counter">96</span>
+                          </div>
+                          </div>
+                        </li>
+                        <li class="gallery-of-reviews__item">
+                          <picture>
+                            <source media="(min-width:1200px)" srcset="img/devils-bridge-desktop.jpg 1x, img/devils-bridge-desktop@2x.jpg 2x">
+                              <source media="(min-width:768px)" srcset="img/devils-bridge-tablet.jpg 1x, img/devils-bridge-tablet@2x.jpg 2x">
+                                <img src="img/devils-bridge.jpg" alt="" srcset="img/devils-bridge@2x.jpg 2x">
+                              </picture>
+                              <div class="gallery-of-reviews__description-box">
+                                <div class="gallery-of-reviews__wrapper-title">
+                                  <h3 class="gallery-of-reviews__title">Мост дьявола</h3>
+                                  <p class="gallery-of-reviews__excerpt">Автор фото: Антон</p>
+                                </div>
+                                <div class="gallery-of-reviews__likes">
+                                  <button class="gallery-of-reviews__button-likes" type="button" name="button">
+                                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                                    </svg>
+                                  </button>
+                                  <span class="gallery-of-reviews__counter">254</span>
+                              </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </section>
 
       <section class="video-presentation container">
         <h2 class="visually-hidden">видеопрезентация</h2>
@@ -151,8 +164,8 @@
           </div>
           <div class="video-presentation__bottom">
             <picture>
-              <source media="(min-width:1280px)" srcset="#">
-              <source media="(min-width:768px)" srcset="#">
+              <source media="(min-width:1200px)" srcset="img/still-in-doubt-desktop.jpg 1x, img/still-in-doubt-desktop@2x.jpg 2x">
+              <source media="(min-width:768px)" srcset="img/still-in-doubt-tablet.jpg 1x, img/still-in-doubt-tablet@2x.jpg 2x">
               <img src="img/still-in-doubt.jpg" alt="" srcset="img/still-in-doubt@2x.jpg 2x">
             </picture>
             <div class="video-presentation__control">
@@ -227,6 +240,8 @@
         </div>
       </div>
     </footer>
+
+  </div>
 
   </body>
 </html>
