@@ -1,10 +1,27 @@
 .video-presentation__wrapper {
-  width: 320px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .video-presentation__top {
   text-align: center;
+
+  @media (min-width: 768px) {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+
+.video-presentation__bottom {
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 648px;
+    height: 500px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 800px;
+  }
 }
 
 .video-presentation__title {
@@ -29,16 +46,30 @@
 .video-presentation__control {
   position: relative;
   bottom: 50px;
+
+  @media (min-width: 768px) {
+    bottom: 97px;
+  }
 }
 
 .video-presentation__skale {
   display: flex;
   align-items: center;
-  margin: auto;
+  margin-left: 20px;
   width: 280px;
   height: 45px;
   background-color: #000000;
   opacity: 0.6;
+
+  @media (min-width: 768px) {
+    width: 648px;
+    height: 93px;
+    margin: 0;
+  }
+
+  @media (min-width: 1200px) {
+    width: 800px;
+  }
 }
 
 .video-presentation__bar {
@@ -49,16 +80,30 @@
   height: 3px;
   background-color: #ffffff;
   opacity: 0.2;
+
+  @media (min-width: 768px) {
+    width: 389px;
+    margin-left: 95px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 540px;
+  }
 }
 
 .video-presentation__video-functions {
   width: 280px;
   height: 66px;
   background-color: #f2f2f2;
-  margin: auto;
+  margin-left: 20px;
   margin-bottom: 40px;
   display: flex;
   align-items: center;
+
+  @media (min-width: 768px) {
+    background: #ffffff;
+    display: inline;
+  }
 }
 
 .video-presentation__functions-list {
@@ -73,12 +118,41 @@
   cursor: pointer;
   margin-right: 30px;
 
+  @media (min-width: 768px) {
+    position: absolute;
+    bottom: 75px;
+    margin-left: 320px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 380px;
+  }
+
   &:first-child {
     margin-right: 150px;
+
+    @media (min-width: 768px) {
+      margin: 0;
+      left: 40px;
+    }
   }
 
   &:last-child {
     margin-right: 0;
+
+    @media (min-width: 768px) {
+      margin-left: 385px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-left: 450px;
+    }
+  }
+}
+
+.video-presentation__functions-item path {
+  @media (min-width: 768px) {
+    fill: #ffffff;
   }
 }
 
@@ -92,4 +166,9 @@
   background-color: #ffffff;
   border-radius: 50%;
   cursor: pointer;
+
+  @media (min-width: 768px) {
+    left: 203px;
+    bottom: 77px;
+  }
 }
