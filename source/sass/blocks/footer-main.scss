@@ -4,7 +4,7 @@
 
 .footer-main__wrapper {
   width: 320px;
-  padding-top: 38px;
+  padding-top: 32px;
   padding-bottom: 23px;
   margin: auto;
   text-align: center;
@@ -25,7 +25,17 @@
 .footer-main__top {
   width: 170px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+
+  @media (min-width: 768px) {
+    width: 150px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 150px;
+    margin: 0;
+    margin-left: 110px;
+  }
 }
 
 .footer-main__link-top {
@@ -66,11 +76,21 @@
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
-  width: 150px;
+  width: 140px;
+
+  @media (min-width: 768px) {
+    margin-left: 65px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+    margin-right: 115px;
+    margin-left: 8px;
+  }
 }
 
 .footer-main__link-bottom {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
