@@ -8,35 +8,79 @@
 }
 
 .real-town__box {
-  width: 295px;
+  width: 320px;
   margin: auto;
-  padding-top: 33px;
+  padding-top: 50px;
   padding-bottom: 40px;
+
+  @media (min-width: 768px) {
+    width: 256px;
+    padding-top: 34px;
+    padding-bottom: 38px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 400px;
+    padding-top: 26px;
+    padding-bottom: 38px;
+  }
 }
 
 .real-town__title {
   margin: 0;
   color: #ffffff;
-  font-weight: 700;
-  font-size: 21px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 26px;
+  text-transform: uppercase;
 
   @media (min-width: 768px) {
     width: 180px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
     margin: 0 auto;
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: 1200px) {
+    line-height: 27px;
   }
 }
 
 .real-town__excerpt {
-  margin: 0;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 12px;
   color: #ffffff;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    width: 215px;
+    margin: 0 auto;
+    line-height: 21px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 275px;
+  }
+}
+
+.real-town__excerpt-number {
+  margin: 0;
+  margin-top: 12px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 26px;
 
   @media (min-width: 768px) {
     width: 215px;
     margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
 
@@ -45,4 +89,8 @@
   display: block;
   height: 260px;
   object-fit: cover;
+
+  @media (min-width: 768px) {
+    height: 256px;
+  }
 }
