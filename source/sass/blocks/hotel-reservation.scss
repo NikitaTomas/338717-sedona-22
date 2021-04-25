@@ -38,6 +38,14 @@
   }
 }
 
+.br__width-768px {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline;
+  }
+}
+
 .hotel-reservation__excerpt {
   width: 270px;
   margin: 0 auto;
@@ -49,7 +57,7 @@
   text-transform: uppercase;
 
   @media (min-width: 768px) {
-    width: 400px;
+    width: 450px;
     margin-bottom: 39px;
   }
 
