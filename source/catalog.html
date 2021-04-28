@@ -15,7 +15,7 @@
         <nav>
           <ul class="header-main__list">
             <li class="header-main__item">
-              <a class="header-main__link" href="#">Главная</a>
+              <a class="header-main__link" href="index.html">Главная</a>
             </li>
             <li class="header-main__item">
               <a class="header-main__link" href="catalog.html">Фото и видео</a>
@@ -52,6 +52,7 @@
         <div class="photo-gallery__wrapper">
           <div class="photo-gallery__top">
             <picture>
+              <source media="(min-width:1200px)" srcset="img/sedona-form-desktop.svg">
               <source media="(min-width:768px)" srcset="img/sedona-form-tablet.svg">
               <img class="photo-gallery__position-img" src="img/sedona-form.svg" alt="welcome to the gorgeus sedona">
             </picture>
@@ -92,7 +93,7 @@
                   <picture>
                     <source media="(min-width:1200px)" srcset="img/local-vegetation-desktop.jpg 1x, img/local-vegetation-desktop@2x.jpg 2x">
                       <source media="(min-width:768px)" srcset="img/local-vegetation-tablet.jpg 1x, img/local-vegetation-tablet@2x.jpg 2x">
-                        <img src="img/local-vegetation.jpg" alt="" srcset="img/local-vegetation@2x.jpg 2x">
+                        <img class="gallery-of-reviews__box-img" src="img/local-vegetation.jpg" alt="" srcset="img/local-vegetation@2x.jpg 2x">
                       </picture>
                       <div class="gallery-of-reviews__description-box">
                         <div class="gallery-of-reviews__wrapper-title">
@@ -113,7 +114,7 @@
                       <picture>
                         <source media="(min-width:1200px)" srcset="img/road-north-desktop.jpg 1x, img/road-north-desktop@2x.jpg 2x">
                           <source media="(min-width:768px)" srcset="img/road-north-tablet.jpg 1x, img/road-north-tablet@2x.jpg 2x">
-                            <img src="img/road-north.jpg" alt="" srcset="img/road-north@2x.jpg 2x">
+                            <img class="gallery-of-reviews__box-img" src="img/road-north.jpg" alt="" srcset="img/road-north@2x.jpg 2x">
                           </picture>
                           <div class="gallery-of-reviews__description-box">
                             <div class="gallery-of-reviews__wrapper-title">
@@ -134,7 +135,7 @@
                           <picture>
                             <source media="(min-width:1200px)" srcset="img/devils-bridge-desktop.jpg 1x, img/devils-bridge-desktop@2x.jpg 2x">
                               <source media="(min-width:768px)" srcset="img/devils-bridge-tablet.jpg 1x, img/devils-bridge-tablet@2x.jpg 2x">
-                                <img src="img/devils-bridge.jpg" alt="" srcset="img/devils-bridge@2x.jpg 2x">
+                                <img class="gallery-of-reviews__box-img" src="img/devils-bridge.jpg" alt="" srcset="img/devils-bridge@2x.jpg 2x">
                               </picture>
                               <div class="gallery-of-reviews__description-box">
                                 <div class="gallery-of-reviews__wrapper-title">
@@ -155,7 +156,7 @@
                         </div>
                       </section>
 
-      <section class="video-presentation container">
+      <section class="video-presentation">
         <h2 class="visually-hidden">видеопрезентация</h2>
         <div class="video-presentation__wrapper">
           <div class="video-presentation__top">

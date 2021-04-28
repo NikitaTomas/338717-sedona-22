@@ -16,11 +16,14 @@
   flex-direction: column;
 
   @media (min-width: 768px) {
+    height: 56px;
     flex-direction: row;
+    background-color: #ffffff;
+    margin-bottom: 2px;
   }
 
   @media (min-width: 1200px) {
-    height: 60px;
+    margin-bottom: 4px;
   }
 }
 
@@ -31,6 +34,7 @@
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   @media (min-width: 768px) {
+    height: 56px;
     background-color: #ffffff;
     display: flex;
     align-items: center;
@@ -114,6 +118,7 @@
 }
 
 .header-main__button {
+  display: none;
   border: none;
   background-color: transparent;
   float: right;
