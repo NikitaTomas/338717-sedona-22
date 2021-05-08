@@ -185,7 +185,7 @@
   }
 }
 
-.revocation-form__item--position-visited-attractions {
+.revocation-form__visited-attractions {
   &::before {
     display: block;
     position: relative;
@@ -210,7 +210,7 @@
   }
 }
 
-.revocation-form__item--flex--visited-attractions {
+.revocation-form__visited-attractions-flex {
   margin-bottom: 10px;
 
   @media (min-width: 768px) {
@@ -231,7 +231,7 @@
   }
 }
 
-.revocation-form__wrapper-item--position-flex {
+.revocation-form__contact-information {
   padding: 0;
   padding-left: 18px;
   padding-right: 20px;
