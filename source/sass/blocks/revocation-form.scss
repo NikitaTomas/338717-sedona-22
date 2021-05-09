@@ -15,14 +15,13 @@
   }
 }
 
-.hidden-desktop {
+.revocation-form__label-phone-hidden {
   @media (min-width: 1200px) {
     display: none;
   }
 }
 
 .revocation-form__item {
-  min-width: 320px;
   padding: 0;
   border: none;
   outline: 1px solid green;
@@ -73,14 +72,19 @@
 
 .revocation-form__title-position-box {
   @media (min-width: 768px) {
-    margin-left: 10px;
+    margin-left: 14px;
     padding-left: 5px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 10px;
   }
 }
 
-.revocation-form__title--position {
+.revocation-form__title-position {
   margin: 0 auto;
   margin-top: 10px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -90,6 +94,10 @@
 
   @media (min-width: 768px) {
     font-size: 21px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 7px;
   }
 }
 
@@ -108,16 +116,24 @@
 
   @media (min-width: 768px) {
     margin-top: 57px;
-    padding-left: 5px;
+    padding-left: 8px;
   }
 }
 
 .revocation-form__wrapper-item-position {
-  padding-left: 21px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
+  margin: 0 auto;
   outline: 1px solid red;
 
   @media (min-width: 768px) {
+    width: 650px;
     margin-top: 52px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 960px;
   }
 }
 
@@ -134,6 +150,10 @@
 
 
 .revocation-form__item-introduce-yourself {
+  @media (min-width: 768px) {
+    margin-left: 0;
+  }
+
   @media (min-width: 1200px) {
     margin-left: 63px;
     width: 422px;
@@ -141,8 +161,6 @@
 }
 
 .revocation-form__item--position-your-impression {
-  margin-top: 127px;
-
   &::before {
     display: block;
     position: relative;
@@ -162,6 +180,7 @@
     margin-top: 0;
     margin-right: auto;
     width: 360px;
+    margin-left: 20px;
     border-right: 1px solid #e5e5e5;
   }
 
@@ -173,8 +192,6 @@
 }
 
 .revocation-form__item--position-contact-information {
-  height: 160px;
-
   @media (min-width: 768px) {
     width: 100%;
     margin-top: 20px;
@@ -201,33 +218,38 @@
   }
 
   @media (min-width: 768px) {
-    margin-top: 148px;
+    margin-top: 7px;
   }
 
   @media (min-width: 1200px) {
     width: 960px;
-    margin-top: 50px;
+    margin-top: 3px;
   }
 }
 
 .revocation-form__visited-attractions-flex {
-  margin-bottom: 10px;
+  padding-left: 18px;
+  padding-right: 20px;
+  display: grid;
+  grid-gap: 20px;
 
   @media (min-width: 768px) {
-    padding: 0;
-    padding-left: 155px;
-    padding-right: 145px;
-    display: flex;
-    flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+    width: 465px;
+    margin: 0 auto;
+    grid-gap: 25px;
+    grid-template-columns: 203px 203px;
     justify-content: space-between;
     margin-top: 25px;
-    margin-bottom: 0;
+    margin-bottom: 12px;
     outline: 1px solid black;
   }
 
   @media (min-width: 1200px) {
-    padding-left: 0;
-    padding-right: 0;
+    width: 960px;
+    grid-template-columns: 203px 203px 203px 203px;
+    margin-bottom: 10px;
   }
 }
 
@@ -254,6 +276,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 45px;
+    margin-bottom: 19px;
     outline: 1px solid blue;
   }
 }
@@ -336,10 +359,9 @@
 }
 
 .revocation-form__item-emotion {
-  margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 43px;
-  width: 280px;
+  width: 100%;
 
   &::before {
     display: block;
@@ -353,28 +375,24 @@
 
   @media (min-width: 768px) {
     width: 100%;
-    margin-top: 0;
+    margin-top: 3px;
     margin-bottom: 63px;
   }
 
   @media (min-width: 1200px) {
+    margin-top: 0;
     margin-bottom: 68px;
   }
 }
 
 .revocation-form__sights-visited {
-  margin-bottom: 20px;
-  margin-top: 19px;
   outline: 1px solid red;
   width: 100%;
+}
 
-  @media (min-width: 768px) {
-    width: 45%;
-    margin-bottom: 10px;
-  }
-
+.revocation-form__wrapper-item-introduce {
   @media (min-width: 1200px) {
-    width: 203px;
+    padding-right: 13px;
   }
 }
 
@@ -391,6 +409,7 @@
 
   @media (min-width: 1200px) {
     width: 100%;
+    margin-left: 7px;
   }
 }
 
@@ -398,7 +417,7 @@
   padding-left: 20px;
   width: 100%;
   height: 56px;
-  margin-left: 17px;
+  margin-left: 15px;
   font-size: 18px;
   border: none;
   background-color: #f2f2f2;
@@ -433,19 +452,20 @@
   margin-bottom: 15px;
 
   @media (min-width: 1200px) {
-    width: 250px;
+    width: 255px;
     margin-left: 10px;
-    margin-right: 2px;
   }
 }
 
 .revocation-form__phone-input {
   padding-left: 20px;
-  width: 92%;
-  height: 56px;
+  padding-right: 60px;
+  width: 100%;
+  height: 58px;
   border: none;
   background-color: #f2f2f2;
   font-size: 18px;
+  box-sizing: border-box;
 
   @media (min-width: 768px) {
     width: 95%;
@@ -519,6 +539,7 @@
   background-image: url("../img/input-radio-form.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-size: 21px;
 }
 
 .revocation-form__impression-label {
@@ -575,9 +596,9 @@
 .revocation-form__title-textarea {
   background-color: #f2f2f2;
   border: none;
+  width: 85%;
   margin-top: 16px;
   padding: 13px 20px;
-  width: 235px;
   height: 130px;
   font-size: 18px;
   font-weight: 700;
@@ -653,10 +674,9 @@
 }
 
 .revocation-form__emotion {
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
   margin-top: 10px;
+  text-align: center;
+
 
   @media (min-width: 768px) {
     width: 650px;
