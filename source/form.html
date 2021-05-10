@@ -15,7 +15,7 @@
         <nav>
           <ul class="header-main__list">
             <li class="header-main__item">
-              <a class="header-main__link" href="#">Главная</a>
+              <a class="header-main__link" href="index.html">Главная</a>
             </li>
             <li class="header-main__item">
               <a class="header-main__link" href="catalog.html">Фото и видео</a>
@@ -52,6 +52,7 @@
         <div class="your-feedback__wrapper">
           <div class="your-feedback__top">
             <picture>
+              <source media="(min-width:1200px)" srcset="img/sedona-form-desktop.svg">
               <source media="(min-width:768px)" srcset="img/sedona-form-tablet.svg">
               <img class="your-feedback__position-img" src="img/sedona-form.svg" alt="welcome to the gorgeus sedona">
             </picture>
@@ -65,17 +66,18 @@
 
       <section class="revocation-form">
         <h2 class="visually-hidden">форма отзыва</h2>
-        <div class="revocation-form__wrapper">
           <form class="revocation-form__list" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="revocation-form__item">
-              <legend class="revocation-form__title">Представьтесь:</legend>
-              <div class="revocation-form__wrapper-item">
+            <fieldset class="revocation-form__item revocation-form__item-introduce-yourself">
+              <legend class="revocation-form__title revocation-form__title-position-box">
+                <span>Представьтесь:</span>
+              </legend>
+              <div class="revocation-form__wrapper-item revocation-form__wrapper-item-introduce">
                 <div class="revocation-form__box">
-                  <label class="revocation-form__label" for="name">имя:</label>
+                  <label class="revocation-form__label" for="name">имя*:</label>
                   <input class="revocation-form__box-input" type="text" name="name" id="name" value="" placeholder="Петр" required>
                 </div>
                 <div class="revocation-form__box">
-                  <label class="revocation-form__label" for="surname">фамилия:</label>
+                  <label class="revocation-form__label" for="surname">фамилия*:</label>
                   <input class="revocation-form__box-input" type="text" name="surname" id="surname" value="" placeholder="Иванов" required>
                 </div>
                 <div class="revocation-form__box">
@@ -84,21 +86,25 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="revocation-form__item revocation-form__item--position-contact-information">
-              <legend class="revocation-form__title">Контактная информация:</legend>
-              <div class="revocation-form__wrapper-item revocation-form__wrapper-item--position-flex">
-                <div class="revocation-form__box-phone">
-                  <label class="revocation-form__label" for="phone">Контактный телефон*:</label>
-                  <input class="revocation-form__phone-input" type="number" name="phone" id="phone" placeholder="Введите телефон" required>
+            <fieldset class="revocation-form__item revocation-form__item--position-contact-information revocation-form__item-tablet">
+              <legend class="revocation-form__title">
+                <span>Контактная информация:</span>
+              </legend>
+              <div class="revocation-form__contact-information">
+                <div class="revocation-form__box-phone-1">
+                  <label class="revocation-form__label-phone" for="phone"><span class="revocation-form__label-phone-hidden">Контактный</span> телефон*:</label>
+                  <input class="revocation-form__phone-input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
                 </div>
-                <div class="revocation-form__box-phone">
-                  <label class="revocation-form__label" for="mail">Электронная почта*:</label>
+                <div class="revocation-form__box-phone-2">
+                  <label class="revocation-form__label-phone revocation-form__label-phone--position" for="mail">Электронная почта*:</label>
                   <input class="revocation-form__phone-input" type="email" name="mail" id="mail" placeholder="Введите e-mail" required>
                 </div>
               </div>
             </fieldset>
             <fieldset class="revocation-form__item revocation-form__item--position-your-impression">
-              <legend class="revocation-form__title">Ваше Общее впечатление:</legend>
+              <legend class="revocation-form__title revocation-form__title-position-box2">
+                <span>Ваше Общее впечатление:</span>
+              </legend>
               <div class="revocation-form__wrapper-item">
                 <div class="revocation-form__your-impression">
                   <input class="visually-hidden revocation-form__radio-button" type="radio" name="impression" id="positively" value="" checked>
@@ -114,9 +120,11 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="revocation-form__item revocation-form__item--position-visited-attractions">
-              <legend class="revocation-form__title">посещенные <br>достопримечательности:</legend>
-              <div class="revocation-form__wrapper-item  revocation-form__item--flex--visited-attractions">
+            <fieldset class="revocation-form__item revocation-form__visited-attractions revocation-form__item-tablet">
+              <legend class="revocation-form__title-position">
+                посещенные <br>достопримечательности:
+              </legend>
+              <div class="revocation-form__visited-attractions-flex">
                 <div class="revocation-form__sights-visited">
                   <input class="visually-hidden revocation-form__visited-input" type="checkbox" name="devil's-bridge" id="devil's-bridge" value="" checked>
                   <label class="revocation-form__visited-label" for="devil's-bridge">Мост Дьявола</label>
@@ -135,11 +143,11 @@
                 </div>
               </div>
             </fieldset>
-            <div class="revocation-form__item revocation-form__item-emotion">
-              <div class="revocation-form__wrapper-item">
+            <div class="revocation-form__item-emotion">
+              <div class="revocation-form__wrapper-item-position">
                 <div class="revocation-form__emotion">
-                  <label class="revocation-form__title" for="emotion">Опишите свои эмоции:</label>
-                  <textarea class="revocation-form__title-textarea" name="emotion" id="emotion" rows="8" cols="35"></textarea>
+                  <label class="revocation-form__title revocation-form__item-tablet" for="emotion">Опишите свои эмоции:</label>
+                  <textarea class="revocation-form__title-textarea" name="emotion" id="emotion" rows="8" cols="15" placeholder="Опишите подробно все свои восторги"></textarea>
                 </div>
               </div>
               <div class="revocation-form__post-a-review">
@@ -148,7 +156,6 @@
               </div>
             </div>
           </form>
-        </div>
       </section>
 
     </main>
