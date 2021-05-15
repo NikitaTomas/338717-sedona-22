@@ -80,7 +80,7 @@ exports.images = copyImages;
 // WebP
 
 const createWebp = () => {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src("source/img/**/*.{png,jpg}")
   .pipe(webp({quality: 90}))
   .pipe(gulp.dest("build/img"));
 }
@@ -126,8 +126,8 @@ exports.clean = clean;
 // Server
 
 const server = () => {
-  server.init({
-    server: "build/",
+  sync.init({
+    server: "build",
     notify: false,
     open: true,
     cors: true,
@@ -151,10 +151,6 @@ const watcher = () => {
   gulp.watch("source/*.html", gulp.series("html, reload"));
   gulp.watch("source/js/script.js", gulp.series("scripts"));
 }
-
-exports.default = gulp.series(
-  styles, server, watcher
-);
 
 // Build
 
