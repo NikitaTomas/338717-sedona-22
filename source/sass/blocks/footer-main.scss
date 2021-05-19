@@ -61,6 +61,14 @@
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 }
 
 .footer-main__link {
@@ -69,6 +77,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-main__link path:active {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .footer-main__bottom {
@@ -96,4 +108,12 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.footer-main__link-logo path:hover {
+  fill: #81b3d2;
+}
+
+.footer-main__link-logo path:active {
+  fill: rgba(255, 255, 255, 0.3);
 }

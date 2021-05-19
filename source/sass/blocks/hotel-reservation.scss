@@ -73,6 +73,18 @@
   height: 58px;
   background-color: #81b3d2;
   line-height: 52px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    color: #e5e5e5;
+  }
 }
 
 .hotel-reservation__link {
@@ -81,6 +93,14 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 21px;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    color: #ffffff;
+  }
 
   @media (min-width: 768px) {
     padding: 10px 120px;

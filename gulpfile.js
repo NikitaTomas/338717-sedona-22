@@ -125,7 +125,7 @@ exports.clean = clean;
 
 // Server
 
-const server = () => {
+const server = (done) => {
   sync.init({
     server: "build",
     notify: false,
@@ -133,6 +133,7 @@ const server = () => {
     cors: true,
     ui: false
 });
+  done();
 };
 
 exports.server = server;
@@ -147,9 +148,9 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html", gulp.series("html, reload"));
-  gulp.watch("source/js/script.js", gulp.series("scripts"));
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
+  gulp.watch("source/*.html", gulp.series(html, reload));
+  gulp.watch("source/js/script.js", gulp.series(scripts));
 }
 
 // Build
