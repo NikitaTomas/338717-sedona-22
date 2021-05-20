@@ -2,6 +2,28 @@
 .map-index__wrapper {
   width: 100%;
   margin-top: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 27px;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 17px;
+    background-color: #81b3d3;
+    border-radius: 50%;
+  }
 }
 
 .map-index__width {
