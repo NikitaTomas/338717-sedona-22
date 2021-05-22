@@ -2,6 +2,14 @@
   width: 100%;
 }
 
+.your-feedback__wrapper {
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: 768px) {
+    border: none;
+  }
+}
+
 .your-feedback__top {
   width: 100%;
   min-height: 158px;
@@ -37,7 +45,7 @@
 .your-feedback__bottom {
   margin: 0 auto;
   padding-top: 38px;
-  padding-bottom: 22px;
+  padding-bottom: 17px;
   text-align: center;
 
   @media (min-width: 768px) {
@@ -99,8 +107,8 @@
 
 .your-feedback__excerpt {
   margin: 0 auto;
-  width: 320px;
-  font-weight: 700;
+  width: 300px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #4f4f4f;

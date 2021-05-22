@@ -24,13 +24,13 @@
   padding: 0;
   border: none;
 
-  &::before {
+  &::after {
     display: block;
     position: relative;
     content: "";
     width: 100%;
     height: 1px;
-    top: -47px;
+    top: -5px;
     background-color: #e5e5e5;
 
     @media (min-width: 768px) {
@@ -46,8 +46,32 @@
 
 .revocation-form__item-tablet {
   @media (min-width: 768px) {
-    border-top: 1px solid #e5e5e5;
     width: 100%;
+    border: 1px solid #d8d8d8;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+}
+
+.revocation-form__emotion-tablet {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+    padding-left: 75px;
+    padding-right: 75px;
+    z-index: 3;
+    position: relative;
+    background-color: #ffffff;
   }
 }
 
@@ -69,7 +93,10 @@
 }
 
 .revocation-form__title-position-box {
+  margin-top: 20px;
+
   @media (min-width: 768px) {
+    margin-top: 15px;
     margin-left: 14px;
     padding-left: 5px;
   }
@@ -81,8 +108,8 @@
 
 .revocation-form__title-position {
   margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 14px;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -92,11 +119,18 @@
 
   @media (min-width: 768px) {
     font-size: 21px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   @media (min-width: 1200px) {
     margin-top: 7px;
   }
+}
+
+.revocation-form__title-position-2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .revocation-form__label {
@@ -196,25 +230,16 @@
 
   @media (min-width: 1200px) {
     width: 960px;
+    margin-top: 25px;
   }
 }
 
 .revocation-form__visited-attractions {
-  &::before {
-    display: block;
-    position: relative;
-    content: "";
-    width: 100%;
-    height: 1px;
-    top: -68px;
-    background-color: #e5e5e5;
-
-    @media (min-width: 768px) {
-      display: none;
-    }
-  }
+  border: none;
+  padding: 0;
 
   @media (min-width: 768px) {
+    margin: 0 auto;
     margin-top: 7px;
   }
 
@@ -362,8 +387,18 @@
     content: "";
     width: 100%;
     height: 1px;
-    top: -9px;
+    top: -11px;
     background-color: #e5e5e5;
+
+    @media (min-width: 768px) {
+      top: 63px;
+      width: 84%;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 1200px) {
+      width: 80%;
+    }
   }
 
   @media (min-width: 768px) {
@@ -411,6 +446,8 @@
   height: 56px;
   margin-left: 15px;
   font-size: 18px;
+  font-weight: 700;
+  font-family: inherit;
   border: none;
   background-color: #f2f2f2;
 
@@ -457,6 +494,8 @@
   border: none;
   background-color: #f2f2f2;
   font-size: 18px;
+  font-weight: 700;
+  font-family: inherit;
   box-sizing: border-box;
 
   @media (min-width: 768px) {
