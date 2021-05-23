@@ -1,4 +1,4 @@
-.header-wrapper {
+.header-main__wrapper {
   padding-bottom: 56px;
 
   @media (min-width: 768px) {
@@ -152,14 +152,6 @@
   margin-right: 12px;
   margin-top: 16px;
   cursor: pointer;
-
-  @media (min-width: 768px) {
-    display: none;
-  }
-}
-
-.header-main__button-on {
-  display: block;
 
   @media (min-width: 768px) {
     display: none;

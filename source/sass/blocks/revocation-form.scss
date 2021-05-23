@@ -93,10 +93,10 @@
 }
 
 .revocation-form__title-position-box {
-  margin-top: 20px;
+  margin-top: 40px;
 
   @media (min-width: 768px) {
-    margin-top: 15px;
+    margin-top: 30px;
     margin-left: 14px;
     padding-left: 5px;
   }
@@ -108,7 +108,7 @@
 
 .revocation-form__title-position {
   margin: 0 auto;
-  margin-top: 14px;
+  margin-top: 29px;
   margin-bottom: 0;
   font-weight: 700;
   font-size: 18px;
@@ -172,6 +172,7 @@
 .revocation-form__title-position-box2 {
   @media (min-width: 768px) {
     padding-left: 0;
+    margin-top: 30px;
   }
 
   @media (min-width: 1200px) {
@@ -684,8 +685,9 @@
   width: 280px;
   margin: 0 auto;
   border: none;
-  font-weight: 400;
-  font-size: 20px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 21px;
   line-height: 26px;
   color: #ffffff;
   text-transform: uppercase;
