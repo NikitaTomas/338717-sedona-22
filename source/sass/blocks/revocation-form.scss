@@ -93,10 +93,10 @@
 }
 
 .revocation-form__title-position-box {
-  margin-top: 40px;
+  margin-top: 20px;
 
   @media (min-width: 768px) {
-    margin-top: 30px;
+    margin-top: 15px;
     margin-left: 14px;
     padding-left: 5px;
   }
@@ -108,7 +108,7 @@
 
 .revocation-form__title-position {
   margin: 0 auto;
-  margin-top: 29px;
+  margin-top: 14px;
   margin-bottom: 0;
   font-weight: 700;
   font-size: 18px;
@@ -172,7 +172,6 @@
 .revocation-form__title-position-box2 {
   @media (min-width: 768px) {
     padding-left: 0;
-    margin-top: 30px;
   }
 
   @media (min-width: 1200px) {
@@ -182,6 +181,8 @@
 
 
 .revocation-form__item-introduce-yourself {
+  margin-top: 20px;
+
   @media (min-width: 768px) {
     margin-left: 0;
   }
@@ -193,6 +194,8 @@
 }
 
 .revocation-form__item--position-your-impression {
+  margin-top: 15px;
+
   &::before {
     display: block;
     position: relative;
@@ -224,29 +227,32 @@
 }
 
 .revocation-form__item--position-contact-information {
+  margin-top: 15px;
+
   @media (min-width: 768px) {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 33px;
   }
 
   @media (min-width: 1200px) {
     width: 960px;
-    margin-top: 25px;
+    margin-top: 34px;
   }
 }
 
 .revocation-form__visited-attractions {
   border: none;
   padding: 0;
+  margin-top: 8px;
 
   @media (min-width: 768px) {
     margin: 0 auto;
-    margin-top: 7px;
+    margin-top: 20px;
   }
 
   @media (min-width: 1200px) {
     width: 960px;
-    margin-top: 3px;
+    margin-top: 10px;
   }
 }
 
