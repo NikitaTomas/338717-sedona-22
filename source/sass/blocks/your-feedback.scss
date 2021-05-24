@@ -13,20 +13,33 @@
 .your-feedback__top {
   width: 100%;
   min-height: 158px;
+  background-color: #382214;
   background-image: url("../img/sedona-background-form.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/sedona-background-form@2x.jpg");
+  }
+
   @media (min-width: 768px) {
     min-height: 290px;
     background-image: url("../img/sedona-background-form-tablet.jpg");
     background-position: bottom;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/sedona-background-form-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: 1200px) {
     height: 297px;
     background-image: url("../img/sedona-background-form-desktop.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/sedona-background-form-desktop@2x.jpg");
+    }
   }
 }
 

@@ -5,21 +5,34 @@
 .welcome__top {
   width: 100%;
   min-height: 389px;
+  background-color: #382214;
   background-image: url("../img/sedona-background.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/sedona-background@2x.jpg");
+  }
+
   @media (min-width: 768px) {
     margin-top: -2px;
     min-height: 518px;
     background-image: url("../img/sedona-background-tablet.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/sedona-background-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: 1200px) {
     margin-top: -4px;
     min-height: 518px;
     background-image: url("../img/sedona-background-desktop.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/sedona-background-desktop@2x.jpg");
+    }
   }
 }
 

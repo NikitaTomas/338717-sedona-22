@@ -570,6 +570,10 @@
   background-color: #e5e5e5;
 }
 
+.revocation-form__radio-button:focus + label::before {
+  background-color: #e5e5e5;
+}
+
 .revocation-form__radio-button:disabled + label::before {
   background-color: #d5d5d5;
 }
@@ -612,6 +616,10 @@
 }
 
 .revocation-form__visited-input:hover + label::before {
+  background-color: #e5e5e5;
+}
+
+.revocation-form__visited-input:focus + label::before {
   background-color: #e5e5e5;
 }
 
